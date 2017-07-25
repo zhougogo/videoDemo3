@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<video controls src="video.mp4"></video>
+	</body>
+	<script src="" type="text/javascript" charset="utf-8">
+		var player = document.getElementsByTagName('video')[0];
+
+			document.addEventListener("WeixinJSBridgeReady", function() {
+	            setTimeout(function(){
+	                player.play();//调用h5播放器自动播放的方法，我们使用的是video.js播放器。
+	            },500);
+	        }, false);
+	</script>
+</html>
